@@ -1,0 +1,79 @@
+body::before {
+    display: block;
+    content: "";
+    height: 60px;
+}
+
+@media (min-width: 768px) {
+    .news-input {
+        width: 50%;
+    }
+}
+
+@font-face {
+    font-family: Bebas Neue;
+    src: url("../fonts/BebasNeue-Regular.ttf");
+}
+
+.card-h:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-5%);
+}
+
+#writer {
+    display: inline-flex;
+    white-space: nowrap;
+    border-right: 3px solid;
+    width: 17ch;
+    overflow: hidden;
+
+    animation: typing 1.5s steps(17),
+    blink .5s infinite step-end alternate;
+}
+
+@keyframes typing {
+    from {width: 0}
+}
+
+.navbar-brand {
+    font-family: "Bebas Neue", serif;
+    font-size: 32px;
+}
+
+.text-custom {
+    color: #F9322C;
+}
+.nav-link {
+    color: white;
+}
+
+.bg-nav {
+    background-color: #F9322C;
+}
+
+.bg-custom {
+    background-color: white;
+}
+
+.bg-cards {
+    background-color: #15172a;
+}
+
+.bg-card-mid {
+    background-color: #4e2cf1;
+}
+.bg-learn {
+    background-color: #15172a;
+}
+
+@keyframes blink {
+    50% { border-color: transparent}
+}
+
+.form-control {
+    border-radius: unset;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom:  1px solid ;
+}
